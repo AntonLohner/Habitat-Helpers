@@ -19,6 +19,13 @@
         <entry key="..\:/Users/taylo/AndroidStudioProjects/Habitat-Helpers/HabitatHelpers/app/src/main/res/layout/overlay.xml" value="0.134375" />
         <entry key="..\:/Users/taylo/AndroidStudioProjects/Habitat-Helpers/HabitatHelpers/app/src/main/res/menu/drawer_main.xml" value="0.134375" />
         <entry key="..\:/Users/taylo/AndroidStudioProjects/Habitat-Helpers/HabitatHelpers/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1421875" />
+        <entry key="app/src/main/res/layout/activity_create.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_editor.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_load.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/fragment_load.xml" value="0.1503623188405797" />
       </map>
     </option>
   </component>
