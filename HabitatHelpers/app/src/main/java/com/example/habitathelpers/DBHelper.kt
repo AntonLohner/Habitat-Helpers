@@ -8,17 +8,17 @@ class DBHelper(context: Context): SQLiteOpenHelper(context, DB_NAME, null, DB_VE
 
     override fun onCreate(db: SQLiteDatabase?) {
         db!!.execSQL(CREATE_TABLE_HABS)
-        db!!.execSQL(CREATE_TABLE_PETS)
+        db.execSQL(CREATE_TABLE_PETS)
         initializeTables()
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db!!.execSQL(DROP_TABLE_HABS)
-        db!!.execSQL(DROP_TABLE_PETS)
+        db.execSQL(DROP_TABLE_PETS)
         closeDB()
     }
 
-    fun initializeTables(){
+    private fun initializeTables(){
         val db = this.readableDatabase
         val queryp = "SELECT * FROM pets"
         val p = db.rawQuery(queryp, null)

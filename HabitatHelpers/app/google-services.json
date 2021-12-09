@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "350055584519",
+    "project_id": "finalproject-a993b",
+    "storage_bucket": "finalproject-a993b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350055584519:android:a89cea0010966df029aba2",
+        "android_client_info": {
+          "package_name": "com.example.habitathelpers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350055584519-ds2274h9u4kcvo1rq14gfg3lakkvth56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqy05FY_hOmQCUZpYQAh_cboGzDE0T30Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350055584519-ds2274h9u4kcvo1rq14gfg3lakkvth56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

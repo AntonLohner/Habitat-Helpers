@@ -11,4 +11,11 @@
     <string name="home">Home</string>
     <string name="create_a_new_habitat">Create a new habitat</string>
     <string name="load_a_habitat">Load a habitat</string>
+    <string name="create_user">Create User</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="create_account">Create Account</string>
+    <string name="habitat_helper">Habitat Helper</string>
+    <string name="dev1">Taylor Robey: tdrobey@syr.edu</string>
+    <string name="dev2">Anton Lohner: ailohner@syr.edu</string>
 </resources>

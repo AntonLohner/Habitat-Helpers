@@ -22,20 +22,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
-        android:text="Habitat Helper"
+        android:text="@string/habitat_helper"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/white"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Taylor Robey: tdrobey@syr.edu"
+        android:text="@string/dev1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/white"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
-        android:text="Anton : "
+        android:text="@string/dev2"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/white"/>
 </LinearLayout>

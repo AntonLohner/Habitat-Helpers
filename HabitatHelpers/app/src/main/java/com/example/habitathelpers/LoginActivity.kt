@@ -17,8 +17,16 @@ import com.google.firebase.auth.FirebaseUser
 class LoginActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
 
     private lateinit var auth: FirebaseAuth
-    internal lateinit var userNameET: EditText
-    internal lateinit var passwordET: EditText
+    private lateinit var userNameET: EditText
+    private lateinit var passwordET: EditText
+
+    override fun onResume() {
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null){
+            startActivity(user)
+        }
+        super.onResume()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,10 +60,9 @@ class LoginActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 //        navView.setNavigationItemSelectedListener(this)
     }
 
-    // TODO: user login via firebase
 
     //login
-    fun login() {
+    private fun login() {
         auth.signInWithEmailAndPassword(userNameET.text.toString(), passwordET.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -80,7 +87,7 @@ class LoginActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         startActivity(intent)
     }
 
-    fun createUser() {
+    private fun createUser() {
         auth.createUserWithEmailAndPassword(userNameET.text.toString(),
             passwordET.text.toString())
             .addOnCompleteListener(this) { task ->

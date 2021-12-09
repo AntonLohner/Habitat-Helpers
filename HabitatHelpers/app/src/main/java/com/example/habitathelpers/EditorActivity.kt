@@ -7,7 +7,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class EditorActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
     override fun onCreate(savedInstanceState: Bundle?) {

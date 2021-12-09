@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val user = intent.extras?.get("user")
         setContentView(R.layout.activity_main)
 
         // use custom toolbar
@@ -38,24 +39,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         navView.setNavigationItemSelectedListener(this)
 
-        // TODO: check if user is logged in
         //current default declaration so code runs
         //should be set to true if user is logged in
-        var logged_in = false
+        if (user != null){
+            // if logged in, inflate fragment_main and get buttons
+            supportFragmentManager.beginTransaction().replace(R.id.linear2, MainFragment())
+                .addToBackStack("")
+                .commit()
+            // replace toolbar name and user photo?
 
-        //if not logged in, inflate fragment_login and get buttons
-        if (!logged_in){
+
+        }
+        else{
+            //if not logged in, inflate fragment_login and get buttons
             supportFragmentManager.beginTransaction().replace(R.id.linear2, LoginFragment())
                 .addToBackStack("")
                 .commit()
         }
-        // if logged in, inflate fragment_main and get buttons
-        else {
-            supportFragmentManager.beginTransaction().replace(R.id.linear2, MainFragment())
-                .addToBackStack("")
-                .commit()
-        }
-
     }
 
     //handle fragment button presses
